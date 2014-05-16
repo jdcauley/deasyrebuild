@@ -1,0 +1,262 @@
+@import '_importer';
+
+/* Variables */
+
+@black:       #000;
+@white:       #fff;
+
+@font-family-sans-serif:     "obliqua", "Helvetica Neue", Helvetica, Arial, sans-serif;
+@font-family-serif:          "skolar", Georgia, "Times New Roman", Times, serif;
+
+/* Mixins */
+.img-responsive{
+  height: auto;
+  width: 100%;
+  max-width: 100%;
+}
+a{
+  text-decoration: none;
+}
+
+
+/* Utilities */
+.main{
+  display: block;
+  height: auto;
+  width: 100%;
+}
+.container{
+  display: block;
+  position: relative;
+  height: auto;
+  margin-left: 80px;
+  margin-right: 85px;
+}
+.container-borders{
+  border-left: 1px solid @black;
+  border-right: 1px solid @black;
+  -webkit-box-shadow:
+    10px 0 0 0  @white,
+    11px 0 0 0 @black;
+  -moz-box-shadow:
+    10px 0 0 0  @white,
+    11px 0 0 0 @black;
+  box-shadow:
+    10px 0 0 0  @white,
+    11px 0 0 0 @black;
+}
+.inside-container{
+  width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow:auto;
+}
+.col{
+  float: left;
+  display: inline-block;
+  height: auto;
+  width: 100%;
+  padding-left:1.5%;
+  padding-right: 1.5%;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box ;   /* Firefox, other Gecko */
+  box-sizing: border-box;
+}
+.one-third{
+  width: 33.3333%
+}
+.two-thirds{
+  width: 66.6666%
+}
+.one-third-offset{
+  margin-left: 33.3333%
+}
+.borders{
+  border-left: 1px solid @black;
+  border-right: 1px solid @black;
+}
+.left{
+  float: left;
+}
+.right{
+  float: right;
+}
+.deasy-img{
+  height: auto;
+  width: 100%;
+  max-width: 100%;
+}
+/* Header */
+
+header{
+
+}
+.dlogo-wrap{
+  padding-top: 40px;
+  padding-left: 20px;
+}
+.dlogo{
+  display: block;
+  height: 157px;
+  width: 157px;
+  background: url(../images/DD_logo.png);
+}
+.dd-head{
+  padding-top: 20px;
+}
+.deasy-header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background: transparent;
+  z-index: 100;
+}
+.header-design, .header-deasy{
+  font-family: @font-family-sans-serif;
+  font-weight: 900;
+}
+.deasy-header{
+  .header-design{
+    color: #D0D2D3;
+    &:hover{
+      color: #000;
+    }
+  }
+  .header-deasy{
+    color: #000;
+    &:hover{
+      color: #000;
+    }
+  }
+}
+.header-borders{
+  background: @white;
+  border-top: 1px solid @black;
+  border-bottom: 1px solid @black;
+}
+.main-nav{
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  ul{
+    list-style: none;
+    display: block;
+  }
+  li{
+    display: inline;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+/* Content */
+
+.black-bar{
+  position: fixed;
+  right: 0;
+  width: 5px;
+  background: @black;
+  display: block;
+  height: 100%;
+}
+.design-flag{
+  position: fixed;
+  top: 300px;
+  right: 5px;
+  height: auto;
+  width: auto;
+  padding: 10px;
+  font-family: @font-family-sans-serif;
+  text-align: center;
+  background: @black;
+  display: block;
+  color: @white;
+  z-index: 100;
+  &:hover{
+    color: @black;
+  }
+  span{
+    display: block;
+  }
+}
+
+/* Main Body */
+
+.intro{
+  padding-top: 140px;
+  p{
+    font-size: 20px;
+    font-family: @font-family-serif;
+  }
+}
+.img-dd{
+  height: auto;
+  min-width: 362px;
+}
+
+/* Media Queries */
+
+/* Small devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+  .img-dd{
+    width: 100%;
+    min-width: 100%;
+  }
+  .container{
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .inside-container{
+    width: 100% !important;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .right{
+    float: none;
+  }
+  .copy{
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .col{
+    display: block;
+    float: none;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .one-third{
+    width: 100%;
+  }
+  .borders{
+    border-left: none;
+    border-right: none;
+  }
+}
+
+/* Timeline */
+
+.designer-dave{
+  margin-bottom: 20px;
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (max-width: 990px) {
+
+}
+
+@media (max-width: 1199px) {
+  .container{
+    width: 86%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .inside-container{
+    width: 80%;
+  }
+  .img-dd{
+    height: auto;
+    max-width: 100%;
+  }
+}
