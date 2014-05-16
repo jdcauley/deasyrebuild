@@ -47,6 +47,7 @@ a{
   overflow:auto;
 }
 .col{
+  position: relative;
   float: left;
   display: inline-block;
   height: auto;
@@ -69,6 +70,9 @@ a{
 .borders{
   border-left: 1px solid @black;
   border-right: 1px solid @black;
+}
+.border-left{
+  border-left: 1px solid @black;
 }
 .left{
   float: left;
@@ -190,6 +194,116 @@ header{
   min-width: 362px;
 }
 
+/* Timeline */
+.timeline{
+  h4{
+    text-align: center;
+  }
+  img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .borders{
+    color: @white;
+    background: @black;
+  }
+}
+.designer-dave{
+  margin-bottom: 20px;
+}
+.designer-dave-offset{
+  margin-top: -20px;
+}
+.cheerios{
+  margin-top: -20px;
+}
+.mademoiselle-offset{
+  margin-top: 150px;
+  margin-bottom: -112px;
+}
+.paul{
+  margin-top: 100px;
+}
+.timeline-copy{
+  color: @white;
+}
+.arrow-ltl-david{
+  position: absolute;
+  top: 70px;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right:10px solid #000;
+  float: right;
+}
+.arrow-designer-dave{
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid #000;
+}
+.arrow-cheerios {
+  position: absolute;
+  top: 100px;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right:10px solid #000;
+  float: right;
+}
+.arrow-mademoiselle{
+  position: absolute;
+  top: 250px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid #000;
+
+}
+.arrow-emma {
+  position: absolute;
+  top: 100px;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right:10px solid #000;
+  float: right;
+}
+.arrow-paul{
+  position: absolute;
+  top: 230px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid #000;
+}
+
+.lead-testimonial{
+  display: block;
+  height: 300px;
+}
+.testimonials{
+  .deasy-img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 /* Media Queries */
 
 /* Small devices (tablets, 768px and up) */
@@ -228,17 +342,16 @@ header{
     border-left: none;
     border-right: none;
   }
-}
-
-/* Timeline */
-
-.designer-dave{
-  margin-bottom: 20px;
+  .timeline{
+    display: none;
+  }
 }
 
 /* Medium devices (desktops, 992px and up) */
-@media (max-width: 990px) {
-
+@media (max-width: 997px) {
+  .timeline{
+    display: none;
+  }
 }
 
 @media (max-width: 1199px) {
