@@ -1,6 +1,12 @@
 section#introduction.intro
   .inside-container
-    img.img-dd.right(src="assets/images/DD_pixal.jpg" onMouseOver="MouseRollover(this)" onMouseOut="MouseOut(this)")
+    img.img-dd.right.hide-small(src="assets/images/DD_pixal.jpg" onMouseOver="MouseRollover(this)" onMouseOut="MouseOut(this)")
+    .copy
+      h4 Hello
+      p I'm David. Unfortunately, I must begin our acquaintance with an apology. My pixels have taken it upon themselves to obscure my likeness. You see, my pixels are very limited in their abilities and are madly jealous-- they are only capable of giving answers.
+      p You're in luck however because I am human. I know this because I like to ask questions. Questions about you, your goals, and beyond. I'll ask questions that challenge assumptions, spark neurons, and spawn ideas--ideas that resonate with your audience and create value that goes beyond the digits in your budget.
+      p Give me a call, we'll discuss what is possible--human to human.
+    img.img-dd.right.show-small(src="assets/images/DD_pixal.jpg" onMouseOver="MouseRollover(this)" onMouseOut="MouseOut(this)")
     script.
       function MouseRollover(MyImage) {
         MyImage.src = "assets/images/DD_nopixal.jpg";
@@ -8,11 +14,6 @@ section#introduction.intro
       function MouseOut(MyImage) {
         MyImage.src = "assets/images/DD_pixal.jpg";
       }
-    .copy
-      h4 Hello
-      p I'm David. Unfortunately, I must begin our acquaintance with an apology. My pixels have taken it upon themselves to obscure my likeness. You see, my pixels are very limited in their abilities and are madly jealous-- they are only capable of giving answers.
-      p You're in luck however because I am human. I know this because I like to ask questions. Questions about you, your goals, and beyond. I'll ask questions that challenge assumptions, spark neurons, and spawn ideas--ideas that resonate with your audience and create value that goes beyond the digits in your budget.
-      p Give me a call, we'll discuss what is possible--human to human.
 
 section#questions.questions
   .inside-container
@@ -25,7 +26,7 @@ section#questions.questions
       p 2) Next, I start digging. What I’m looking for is the strongest link between you or your product and your audience.
       p 3) With this essential truth revealed, it becomes the guide for ideas I will develop through research, exploration, and open communication with you. It’s this informed approach that leads to design solutions that resonate with your audience as relevant and memorable because it speaks to them on a emotional level.
       p 4) After a couple rounds of reﬁnement, it is time to put our ideas into action. Let’s revel in this moment.
-    .col.one-third
+    .col.one-third.why-do-it
       h4 Why Do It
       p With fresh new branding, a website, or promotional piece at hand, you can now face the world with conﬁdence in how you are represented. Likewise, your audience will recognise you as trustworthy, worth their time and perhaps their money.
 
@@ -194,30 +195,24 @@ section.parallaxscroll
   .parallaxscroll-2(data-4880="background-position: 0 -2000px;" data-7000="background-position: 0 0;")
   .parallaxscroll-1(data-4880="background-position: 0 -2400px;" data-7000="background-position: 0 250px;")
 
-
 section#contact.contact
-
-    .row
-      .col-sm-7.col-sm-offset-1
-        h3 Get in Touch
-        .row
-          .form
-            .col-sm-6
-              .form-group
-                label Your Name
-                input.form-control(type="text")
-            .col-sm-6
-              .form-group
-                label Email Address
-                input.form-control(type="text")
-            .col-sm-12
-              .form-group
-                label Message
-                textarea.form-control()
-              .btn.btn-default.btn-black Send
-
-        .col-sm-12
-          hr
-
-          p Thank you for visiting my site. If we work together, you’ll ﬁnd that I’m a real person who understands that you are too. Let’s discuss what is possible—human to human.
-          p Sincerely,
+  .inside-container
+    .col.two-thirds
+      h3 Get in Touch
+      .col.half
+        label Your Name
+        input.form-control(type="text")
+      .col.half
+        label Email Address
+        input.form-control(type="text")
+      .message
+        label Message
+        textarea.form-control
+        input.btn.btn-send(type="submit" value="Send")
+      hr
+      .thankyou
+        p Thank you for visiting my site. If we work together, you’ll ﬁnd that I’m a real person who understands that you are too. Let’s discuss what is possible—<strong><em>human to human<em></strong>.
+        p Sincerely,
+    .col.one-third
+      #map-canvas.map
+      // <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3224.0637244857585!2d-79.8194825!3d36.091934599999966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88531ead9dd071c7%3A0x70824e2e15add92c!2s800+Green+Valley+Rd!5e0!3m2!1sen!2sus!4v1402320745958" width="400" height="300" frameborder="0" style="border:0"></iframe>

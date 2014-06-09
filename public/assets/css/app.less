@@ -15,6 +15,23 @@ a{
 p{
   font-family: @font-family-serif;
 }
+h4{
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 1.33em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+}
+label{
+  display: block;
+  margin-bottom: 5px;
+}
+input{
+  width: 90%;
+  padding: 10px;
+  border: 1px solid @black;
+}
+
+/* Globals */
 
 /* Utilities */
 .main{
@@ -69,6 +86,9 @@ p{
 .one-third-offset{
   margin-left: 33.3333%
 }
+.half{
+  width: 50%;
+}
 .borders{
   border-left: 1px solid @black;
   border-right: 1px solid @black;
@@ -97,13 +117,56 @@ header{
   padding-left: 20px;
 }
 .dlogo{
-  display: block;
+  display: inline-block;
   height: 157px;
   width: 157px;
   background: url(../images/DD_logo.png);
 }
+.phone{
+  display: inline;
+  float: right;
+  margin-top: -30px;
+  padding-right: 20px;
+  font-size: 14px;
+  a{
+    color: @black;
+    &:hover{
+      color: @black;
+      text-decoration: underline;
+    }
+    &:focus{
+      color: @black;
+      text-decoration: underline;
+    }
+    &:active{
+      color: @black;
+      text-decoration: underline;
+    }
+  }
+}
+.details{
+  display: inline;
+  font-size: 14px;
+  padding-left: 10px;
+  a{
+    color: @black;
+    &:hover{
+      color: @black;
+      text-decoration: underline;
+    }
+    &:focus{
+      color: @black;
+      text-decoration: underline;
+    }
+    &:active{
+      color: @black;
+      text-decoration: underline;
+    }
+  }
+}
 .dd-head{
   padding-top: 20px;
+  padding-bottom: 20px;
   border-bottom: 1px solid @black;
 }
 .deasy-header{
@@ -206,18 +269,22 @@ header{
   height: auto;
   min-width: 362px;
 }
-
-.questions{
-
-}
 .about{
   p{
     font-size: 20px;
   }
 }
-
+.questions{
+  margin-bottom: 60px;
+}
+.why-do-it{
+  p{
+    font-size: 20px;
+  }
+}
 /* Timeline */
 .timeline{
+  margin-bottom: 60px;
   h4{
     text-align: center;
   }
@@ -405,6 +472,27 @@ header{
   z-index: 4;
 }
 
+.show-small{
+  display: none;
+}
+.message{
+  padding-left: 1.5%;
+  padding-right: 1.5%;
+  textarea{
+    width: 98%;
+    border: 1px solid @black;
+  }
+}
+.message textarea{
+  height: 200px;
+}
+.map{
+  display: block;
+  width: 100%;
+  height: 273px;
+  margin: 0px;
+  padding: 0px
+}
 /* Media Queries */
 
 /* Small devices (tablets, 768px and up) */
@@ -444,6 +532,12 @@ header{
     border-right: none;
   }
   .timeline{
+    display: none;
+  }
+  .show-small{
+    display: block;
+  }
+  .hide-small{
     display: none;
   }
 }
