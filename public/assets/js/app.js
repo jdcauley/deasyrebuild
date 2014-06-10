@@ -7,8 +7,6 @@ $(function() {
     });
 });
 
-
-
 $(function() {
   $('a[href*=#introduction]').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
